@@ -766,13 +766,24 @@ input::-webkit-calendar-picker-indicator {
         }
       }
       strong {
-        color: #000 !important;
+        font-weight: 400;
       }
       a {
         color: $pri;
       }
     }
   }
+  .why-hp {
+    .why-con {
+      .why-left-con {
+        grid-template-rows: 180px 210px 170px;
+      }
+      .why-right-con {
+        grid-template-rows: 180px 180px;
+      }
+    }
+  }
+
   .details {
     width: 1222px;
     margin: auto;
@@ -925,6 +936,9 @@ input::-webkit-calendar-picker-indicator {
         .collapse-con {
           margin-left: 32px;
           margin-top: 32px;
+        }
+        .collapse-inner-headline {
+          font-size: $fSize4;
         }
       }
       .collapse-hide {

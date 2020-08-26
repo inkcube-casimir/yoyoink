@@ -1026,11 +1026,21 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .content .why .why-con strong {
-  color: #000 !important;
+  font-weight: 400;
 }
 
 .content .why .why-con a {
   color: #ff4d53;
+}
+
+.content .why-hp .why-con .why-left-con {
+  -ms-grid-rows: 180px 210px 170px;
+      grid-template-rows: 180px 210px 170px;
+}
+
+.content .why-hp .why-con .why-right-con {
+  -ms-grid-rows: 180px 180px;
+      grid-template-rows: 180px 180px;
 }
 
 .content .details {
@@ -1240,6 +1250,10 @@ input::-webkit-calendar-picker-indicator {
 .content .details .details-tab .collapse .collapse-con {
   margin-left: 32px;
   margin-top: 32px;
+}
+
+.content .details .details-tab .collapse .collapse-inner-headline {
+  font-size: 18px;
 }
 
 .content .details .details-tab .collapse-hide {
