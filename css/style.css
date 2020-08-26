@@ -258,7 +258,7 @@ input::-webkit-calendar-picker-indicator {
   display: grid;
   -ms-grid-rows: 203px 75px;
       grid-template-rows: 203px 75px;
-  row-gap: 16px;
+  row-gap: 24px;
   background: #f2f2f2;
 }
 
@@ -276,7 +276,15 @@ input::-webkit-calendar-picker-indicator {
   font-weight: 600;
 }
 
+.content .shop .shop-type .four-card-con .four-card-row .four-card div:first-child {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 176px 27px;
+      grid-template-rows: 176px 27px;
+}
+
 .content .shop .shop-type .four-card-con .four-card-row .four-card div h3 {
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
 }
@@ -601,7 +609,7 @@ input::-webkit-calendar-picker-indicator {
   color: #fff;
 }
 
-.content .brother-description {
+.content .description {
   width: 816px;
   margin: auto;
   margin-bottom: 64px;
@@ -617,12 +625,12 @@ input::-webkit-calendar-picker-indicator {
   color: #86868b;
 }
 
-.content .brother-description .paragraph {
+.content .description .paragraph {
   width: 816px;
   margin-bottom: 16px;
 }
 
-.content .brother-description .paragraph .line-1 {
+.content .description .paragraph .line-1 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,9 +640,17 @@ input::-webkit-calendar-picker-indicator {
           align-items: flex-end;
 }
 
-.content .brother-description .paragraph .line-1 img {
+.content .description .paragraph img {
   margin-right: 24px;
+}
+
+.content .brother-description img {
   width: 377px;
+}
+
+.content .hp-description img {
+  margin-bottom: 16px;
+  width: 160px;
 }
 
 .content .best {
@@ -643,8 +659,7 @@ input::-webkit-calendar-picker-indicator {
   width: 1057px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-auto-rows: auto;
   row-gap: 64px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -692,8 +707,10 @@ input::-webkit-calendar-picker-indicator {
 .content .best .best-cat .most-popular-con .items-con {
   display: -ms-grid;
   display: grid;
+  grid-auto-rows: auto;
   -ms-grid-columns: 280px 280px 280px;
       grid-template-columns: 280px 280px 280px;
+  row-gap: 40px;
   -webkit-column-gap: 40px;
           column-gap: 40px;
 }
@@ -924,7 +941,7 @@ input::-webkit-calendar-picker-indicator {
   -webkit-column-gap: 32px;
           column-gap: 32px;
   color: #86868b;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .content .why .why-con .why-left-con {
@@ -1151,35 +1168,42 @@ input::-webkit-calendar-picker-indicator {
   padding: 0 32px;
 }
 
-.content .details .details-tab .collapse ul, .content .details .details-tab .collapse ol {
+.content .details .details-tab .collapse ul,
+.content .details .details-tab .collapse ol {
   list-style-position: inside;
   margin-left: 16px;
   margin-top: 16px;
 }
 
-.content .details .details-tab .collapse ul ol li, .content .details .details-tab .collapse ol ol li {
+.content .details .details-tab .collapse ul ol li,
+.content .details .details-tab .collapse ol ol li {
   list-style-type: upper-alpha;
 }
 
-.content .details .details-tab .collapse ul ol li li, .content .details .details-tab .collapse ol ol li li {
+.content .details .details-tab .collapse ul ol li li,
+.content .details .details-tab .collapse ol ol li li {
   list-style-type: lower-alpha;
 }
 
-.content .details .details-tab .collapse ul li, .content .details .details-tab .collapse ol li {
+.content .details .details-tab .collapse ul li,
+.content .details .details-tab .collapse ol li {
   margin-bottom: 8px;
 }
 
-.content .details .details-tab .collapse ul li div, .content .details .details-tab .collapse ol li div {
+.content .details .details-tab .collapse ul li div,
+.content .details .details-tab .collapse ol li div {
   margin-top: 4px;
   padding: 0 16px;
 }
 
-.content .details .details-tab .collapse ul li div a, .content .details .details-tab .collapse ol li div a {
+.content .details .details-tab .collapse ul li div a,
+.content .details .details-tab .collapse ol li div a {
   color: #005cab;
   text-decoration: underline;
 }
 
-.content .details .details-tab .collapse ul li div .img-con, .content .details .details-tab .collapse ol li div .img-con {
+.content .details .details-tab .collapse ul li div .img-con,
+.content .details .details-tab .collapse ol li div .img-con {
   margin-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,7 +1213,8 @@ input::-webkit-calendar-picker-indicator {
           justify-content: space-between;
 }
 
-.content .details .details-tab .collapse ul li div .img-con div, .content .details .details-tab .collapse ol li div .img-con div {
+.content .details .details-tab .collapse ul li div .img-con div,
+.content .details .details-tab .collapse ol li div .img-con div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1202,11 +1227,13 @@ input::-webkit-calendar-picker-indicator {
           align-items: center;
 }
 
-.content .details .details-tab .collapse ul li div .img-con div img, .content .details .details-tab .collapse ol li div .img-con div img {
+.content .details .details-tab .collapse ul li div .img-con div img,
+.content .details .details-tab .collapse ol li div .img-con div img {
   margin-top: 8px;
 }
 
-.content .details .details-tab .collapse ul li p, .content .details .details-tab .collapse ol li p {
+.content .details .details-tab .collapse ul li p,
+.content .details .details-tab .collapse ol li p {
   margin-left: 16px;
 }
 
