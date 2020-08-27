@@ -64,6 +64,8 @@ input::-webkit-calendar-picker-indicator {
     margin-bottom: 32px;
     a {
       font-size: $fSize5;
+      pointer-events: all;
+      cursor: pointer;
       &:hover {
         color: $pri;
         text-decoration: underline;
@@ -71,6 +73,7 @@ input::-webkit-calendar-picker-indicator {
     }
     .page-name {
       line-height: 1;
+      user-select: none;
     }
   }
   .hero {
@@ -498,7 +501,7 @@ input::-webkit-calendar-picker-indicator {
     margin-bottom: 16px;
     width: 160px;
   }
-  .canon-description {
+  .canon-description{
     img{
       margin-bottom: 16px;
       width: 240px;
@@ -506,6 +509,21 @@ input::-webkit-calendar-picker-indicator {
     a{
       text-decoration: underline;
       color: $sec;
+    }
+  }
+  .epson-description {
+    align-items: flex-start !important;
+
+    img{
+      margin-bottom: 8px;
+      width: 240px;
+    }
+    a{
+      text-decoration: underline;
+      color: $sec;
+    }
+    li{
+      margin-bottom: 8px;
     }
   }
   .best {
@@ -742,7 +760,7 @@ input::-webkit-calendar-picker-indicator {
             h3 {
               color: #000;
               font-weight: 600;
-              line-height: 1;
+              line-height: 1.2;
               align-self: center;
             }
           }
@@ -797,6 +815,14 @@ input::-webkit-calendar-picker-indicator {
     }
     .why-right-con {
       grid-template-rows: 220px 160px;
+    }
+  }
+  .why-epson .why-con{
+    .why-left-con {
+      grid-template-rows: 180px 205px 200px;
+    }
+    .why-right-con {
+      grid-template-rows: 180px 205px;
     }
   }
   .details {

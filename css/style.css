@@ -74,6 +74,8 @@ input::-webkit-calendar-picker-indicator {
 
 .content .content-header a {
   font-size: 14px;
+  pointer-events: all;
+  cursor: pointer;
 }
 
 .content .content-header a:hover {
@@ -83,6 +85,10 @@ input::-webkit-calendar-picker-indicator {
 
 .content .content-header .page-name {
   line-height: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .content .hero {
@@ -663,6 +669,26 @@ input::-webkit-calendar-picker-indicator {
   color: #005cab;
 }
 
+.content .epson-description {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.content .epson-description img {
+  margin-bottom: 8px;
+  width: 240px;
+}
+
+.content .epson-description a {
+  text-decoration: underline;
+  color: #005cab;
+}
+
+.content .epson-description li {
+  margin-bottom: 8px;
+}
+
 .content .best {
   margin: auto;
   margin-bottom: 64px;
@@ -991,7 +1017,7 @@ input::-webkit-calendar-picker-indicator {
 .content .why .why-con .why-left-con .item .text h3 {
   color: #000;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1061,6 +1087,16 @@ input::-webkit-calendar-picker-indicator {
 .content .why-canon .why-con .why-right-con {
   -ms-grid-rows: 220px 160px;
       grid-template-rows: 220px 160px;
+}
+
+.content .why-epson .why-con .why-left-con {
+  -ms-grid-rows: 180px 205px 200px;
+      grid-template-rows: 180px 205px 200px;
+}
+
+.content .why-epson .why-con .why-right-con {
+  -ms-grid-rows: 180px 205px;
+      grid-template-rows: 180px 205px;
 }
 
 .content .details {

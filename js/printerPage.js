@@ -124,18 +124,21 @@ function init() {
 
       for (let e = 0; e < collapseTrigger.length; e++) {
         const trigger = collapseTrigger[e];
-        trigger.addEventListener("click", () => {
-          const id = trigger.getAttribute("id");
-          const collapseClassList = item.querySelector(
-            `.item-bottom .item-collapse-con .${id}`
-          ).classList;
-
-          if (collapseClassList.contains("collapse-show")) {
-            collapseClassList.replace("collapse-show", "collapse-hide");
-          } else {
-            collapseClassList.replace("collapse-hide", "collapse-show");
-          }
-        });
+        
+        if(trigger){
+          trigger.addEventListener("click", () => {
+            const id = trigger.getAttribute("id");
+            const collapseClassList = item.querySelector(
+              `.item-bottom .item-collapse-con .${id}`
+            ).classList;
+  
+            if (collapseClassList.contains("collapse-show")) {
+              collapseClassList.replace("collapse-show", "collapse-hide");
+            } else {
+              collapseClassList.replace("collapse-hide", "collapse-show");
+            }
+          });
+        }
       }
     }
   }
