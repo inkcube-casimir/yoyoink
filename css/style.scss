@@ -498,6 +498,16 @@ input::-webkit-calendar-picker-indicator {
     margin-bottom: 16px;
     width: 160px;
   }
+  .canon-description {
+    img{
+      margin-bottom: 16px;
+      width: 240px;
+    }
+    a{
+      text-decoration: underline;
+      color: $sec;
+    }
+  }
   .best {
     margin: auto;
     margin-bottom: 64px;
@@ -773,17 +783,22 @@ input::-webkit-calendar-picker-indicator {
       }
     }
   }
-  .why-hp {
-    .why-con {
+  .why-hp .why-con {
       .why-left-con {
         grid-template-rows: 180px 210px 170px;
       }
       .why-right-con {
-        grid-template-rows: 180px 180px;
+        grid-template-rows: 180px 210px;
       }
+  }
+  .why-canon .why-con{
+    .why-left-con {
+      grid-template-rows: 220px 160px 104px;
+    }
+    .why-right-con {
+      grid-template-rows: 220px 160px;
     }
   }
-
   .details {
     width: 1222px;
     margin: auto;
@@ -971,6 +986,62 @@ input::-webkit-calendar-picker-indicator {
       #collapse-4 {
         img {
           margin: 32px 16px;
+        }
+        #two-col{
+          margin-top: 16px;
+          display: grid;
+          grid-auto-rows: 240px 240px;
+          row-gap: 16px;
+
+          .row{
+            display: grid;
+            grid-template-columns: 550px 550px;
+            column-gap: 58px;
+            justify-content: center;
+
+            .col{
+              display: grid;
+              grid-template-columns: 179px 400px;
+
+              .two-col-img-con {
+                img{
+                  height: 200px;
+                }
+              }
+              p{
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+      }
+      #four-col{
+        width: 800px;
+        margin: auto;
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        border: 1px solid #000;
+
+        .col{
+          display: grid;
+          grid-template-rows: 48px 48px 48px 48px 48px 48px;
+
+          &:first-child{
+            font-weight: 700;
+          }
+          .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000;
+            line-height: 1;
+            text-align: center;
+
+            &:first-child{
+              font-weight: 700;
+            }
+          }
         }
       }
     }
