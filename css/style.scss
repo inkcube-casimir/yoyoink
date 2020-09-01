@@ -144,6 +144,9 @@ input::-webkit-calendar-picker-indicator {
           &:last-child{
             margin: 0;
           }
+          &:hover{
+            color: $pri2;
+          }
         }
       }
       .show{
