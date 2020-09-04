@@ -52,7 +52,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .page-header {
-  width: 100vw;
+  width: 1222px;
   display: grid;
   grid-template-rows: 40px 72px;
 
@@ -192,6 +192,7 @@ input::-webkit-calendar-picker-indicator {
   width: 1222px;
   height: 100%;
   padding: 32px 0;
+  margin: auto;
 
   display: flex;
   flex-direction: column;
