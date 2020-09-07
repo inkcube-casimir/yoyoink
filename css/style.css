@@ -190,6 +190,7 @@ input::-webkit-calendar-picker-indicator {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #f2f2f2;
+  z-index: 1;
 }
 
 .page-header .bottom-header nav .dropdown a {
@@ -210,13 +211,13 @@ input::-webkit-calendar-picker-indicator {
   display: flex;
 }
 
-.page-header .bottom-header label {
+.page-header .bottom-header form {
   position: relative;
   color: #86868b;
   font-size: 12px;
 }
 
-.page-header .bottom-header label input {
+.page-header .bottom-header form input {
   padding: 0 34px;
   width: 200px;
   height: 40px;
@@ -226,7 +227,7 @@ input::-webkit-calendar-picker-indicator {
   outline: none;
 }
 
-.page-header .bottom-header label .placeholder {
+.page-header .bottom-header form .placeholder {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -239,7 +240,7 @@ input::-webkit-calendar-picker-indicator {
   z-index: -1;
 }
 
-.page-header .bottom-header label .placeholder p {
+.page-header .bottom-header form .placeholder p {
   margin-left: 4px;
 }
 

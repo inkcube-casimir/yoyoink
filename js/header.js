@@ -6,7 +6,7 @@ const bottomHeader = document.querySelector(".page-header .bottom-header");
 const bottomHeaderLinks = bottomHeader.querySelectorAll(".link a");
 const otherBtn = bottomHeader.querySelector("nav button");
 const dropdown = bottomHeader.querySelector("nav .dropdown")
-const searchField = bottomHeader.querySelector("label");
+const searchField = bottomHeader.querySelector("form");
 const searchFieldInput = searchField.querySelector("input");
 const searchFieldPlaceholderText = searchField.querySelector(".placeholder p");
 

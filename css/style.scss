@@ -138,6 +138,7 @@ input::-webkit-calendar-picker-indicator {
         display: none;
         flex-direction: column;
         background: $white2;
+        z-index: 1;
 
         a{
           margin-bottom: 8px;
@@ -154,7 +155,7 @@ input::-webkit-calendar-picker-indicator {
         display: flex;
       }
     }
-    label {
+    form {
       position: relative;
       color: $black2;
       font-size: 12px;
