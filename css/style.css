@@ -1168,8 +1168,8 @@ input::-webkit-calendar-picker-indicator {
 .content .why .why-con {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 622px 485px;
-      grid-template-columns: 622px 485px;
+  -ms-grid-columns: 554px 485px;
+      grid-template-columns: 554px 485px;
   -webkit-column-gap: 32px;
           column-gap: 32px;
   color: #86868b;
@@ -1222,8 +1222,8 @@ input::-webkit-calendar-picker-indicator {
 .content .why .why-con .why-right-con {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 253px 334px 415px;
-      grid-template-rows: 253px 334px 415px;
+  -ms-grid-rows: 619px 415px;
+      grid-template-rows: 619px 415px;
   row-gap: 32px;
 }
 
