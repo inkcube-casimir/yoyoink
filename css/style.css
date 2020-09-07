@@ -1179,8 +1179,8 @@ input::-webkit-calendar-picker-indicator {
 .content .why .why-con .why-left-con {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 253px 334px 415px;
-      grid-template-rows: 253px 334px 415px;
+  -ms-grid-rows: 220px 334px 415px;
+      grid-template-rows: 220px 334px 415px;
   row-gap: 32px;
 }
 
@@ -1222,8 +1222,8 @@ input::-webkit-calendar-picker-indicator {
 .content .why .why-con .why-right-con {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 619px 415px;
-      grid-template-rows: 619px 415px;
+  -ms-grid-rows: 400px 415px;
+      grid-template-rows: 400px 415px;
   row-gap: 32px;
 }
 
